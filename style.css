@@ -1,0 +1,118 @@
+:root {
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, figure, p, ol, ul {
+    margin: 0;
+  }
+  
+  ol[role="list"], ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+/* default styles ends here  */
+
+@font-face {
+    font-family: logo-font;
+    src: url(./assets/Norse-Bold.otf);
+}
+
+
+.formpage {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.img-holder {
+display: flex;
+flex-direction: column;
+width: 35vw;
+height: 100%;
+}
+
+.darklogobar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20vh;
+  width: 35vw;
+  height: 12rem;
+  background-color: rgba(0, 0, 0, 0.447);
+}
+
+#img-logo {
+  height: 11rem;
+}
+
+h1 {
+    font-family: logo-font, sans-serif;
+    font-size: 9rem;
+    color:aliceblue;
+}
+
+.img-credit {
+  position: absolute;
+  top: 95vh;
+  left: 12%;
+  color:rgb(200, 230, 235);
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.link:hover{
+  color: rgb(116, 235, 235);
+  cursor: pointer;
+}
+
+
+
+
+/*RIGHT SIDE */
+.second-block {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.block {
+    --_backgroundcol: var(--backgroundcol, rgb(231, 188, 188));
+     background-color: var(--_backgroundcol);
+     height: 33vh;
+}
+
+form{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input, label {
+  margin: 5ch;
+}
+#first-block, #third-block {
+    --backgroundcol: rgb(209, 209, 202);
+
+}
+
+#second-block {
+    --backgroundcol: rgb(156, 156, 152);
+    box-shadow: 2px black;
+}

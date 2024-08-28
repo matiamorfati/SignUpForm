@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Sign-Up form</title>
 </head>
 <body>
-  <div>
+  <div class="formpage">
      <div class="img-holder">
-          <img src="./assets/halie-west-25xggax4bSA-unsplash.jpg">
-          <img src="./assets/odin-lined.png">
-          <p>Photo by <span class="link">Halie West</span> on <span>Unsplash</span></p>
-     </div>
+          <img id="mainimage" src="./assets/halie-west-25xggax4bSA-unsplash.jpg">
+          <div class="darklogobar">
+            <img src="./assets/odin-lined.png" id="img-logo">
+            <h1>ODIN</h1>
+          </div>
+        <p class="img-credit">Photo by <span class="link">Halie West</span> on <span class="link">Unsplash</span></p>
+      </div>
      <div class="content-holder">
-        <div class="first-block">
+        <div id="first-block" class="block">
           <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
           <p>Sign up now to get started.</p>
           <p id="youknowyouwantto">You know you want to.</p>
         </div>
-        <div class="second-block">
+        <div id="second-block" class="block">
           <form>
             <legend>Let's do this!</legend>
             <label for="firstName">FIRST NAME:</label>
@@ -38,7 +40,7 @@
             <input type="password" id="passwordSecond" name="passwordSecond">
           </form>
         </div>
-        <div class="third-block">
+        <div id="third-block" class="block">
           <button>Create Account</button>
           <div>Already have an account?<span class="link" id="login" ref="">Log in</span></div>
         </div>
