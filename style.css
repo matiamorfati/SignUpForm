@@ -1,50 +1,70 @@
 :root {
-    line-height: 1.5;
-  }
-  
-  h1, h2, h3, h4, h5, figure, p, ol, ul {
-    margin: 0;
-  }
-  
-  ol[role="list"], ul[role="list"] {
-    list-style: none;
-    padding-inline: 0;
-  }
-  
-  h1, h2, h3, h4, h5 {
-    font-size: inherit;
-    font-weight: inherit;
-  }
-  
-  img {
-    display: block;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
-  }
+  line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+  margin: 0;
+  font-weight: lighter;
+}
+
+ol[role="list"],
+ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: -1px 0 rgba(0, 0, 0, 0.269), 0 1px rgba(0, 0, 0, 0.086), 1px 0 rgba(0, 0, 0, 0.121), 0 -1px rgba(0, 0, 0, 0.155);
+  ;
+}
+
 /* default styles ends here  */
 
 @font-face {
-    font-family: logo-font;
-    src: url(./assets/Norse-Bold.otf);
+  font-family: logo-font;
+  src: url(./assets/Norse-Bold.otf);
 }
 
 
 .formpage {
-    display: flex;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
+/* LEFT SIDE */
+/* RESPONSIVNESS TODO */
 .img-holder {
-display: flex;
-flex-direction: column;
-width: 35vw;
-height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  height: 100%;
 }
 
 .darklogobar {
@@ -63,23 +83,23 @@ height: 100%;
 }
 
 h1 {
-    font-family: logo-font, sans-serif;
-    font-size: 9rem;
-    color:aliceblue;
+  font-family: logo-font, sans-serif;
+  font-size: 9rem;
+  color: aliceblue;
 }
 
 .img-credit {
   position: absolute;
   top: 95vh;
   left: 12%;
-  color:rgb(200, 230, 235);
+  color: rgb(200, 230, 235);
 }
 
 .link {
   text-decoration: underline;
 }
 
-.link:hover{
+.link:hover {
   color: rgb(116, 235, 235);
   cursor: pointer;
 }
@@ -93,26 +113,150 @@ h1 {
   flex-direction: column;
   overflow: hidden;
 }
+
 .block {
-    --_backgroundcol: var(--backgroundcol, rgb(231, 188, 188));
-     background-color: var(--_backgroundcol);
-     height: 33vh;
+  --_backgroundcol: var(--backgroundcol, rgb(231, 188, 188));
+  background-color: var(--_backgroundcol);
+  height: 33vh;
 }
 
-form{
+#first-block,
+#third-block {
+  --backgroundcol: rgba(231, 231, 231, 0.515);
+  padding-top: 40px;
+
+}
+
+.content-holder>* {
+  padding-left: 3rem;
+}
+
+/*FIRST BLOCK ON THE RIGHT */
+#first-block {
+  height: 21rem;
+}
+
+#first-block>p {
+  font-size: 28px;
+}
+
+.first-parahraph {
+  padding: 80px 200px 0px 0px;
+}
+
+.second-parahraph {
+  padding: 0px 100px 0px 0px;
+
+}
+
+#youknowyouwantto {
+  padding: 25px 55px 25px 0 px;
+}
+
+/*SECOND BLOCK ON THE RIGHT*/
+
+#second-block {
+  --backgroundcol: rgb(252, 254, 254);
+  box-shadow: 1px 2px 3px rgba(113, 113, 113, 0.65);
+}
+
+h3 {
+  font-size: 28px;
+  color: rgba(3, 5, 32, 0.73);
+  margin-top: 1rem;
+}
+
+label {
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding-bottom: 3px;
+  color: rgba(3, 5, 32, 0.73);
+}
+
+input {
+  height: 2rem;
+  border: 0px;
+  box-shadow: 1px 1px 1px 1px rgb(235, 235, 235);
+  border-radius: 7px;
+  background-color: rgba(255, 252, 248, 0.604);
+  background-blend-mode: hard-light;
+}
+
+input:focus {
+  transition: 0.4s;
+}
+
+input:hover, input:focus {
+  box-shadow: 1px 1px 1px 1px rgba(155, 155, 246, 0.814);
+}
+
+input:focus {
+  background-color: rgba(228, 217, 196, 0.308);
+  outline: none;
+}
+
+input:invalid {
+  border: 1px solid rgba(255, 0, 0, 0.348);
+}
+
+input:valid {
+  border: 1px solid rgba(24, 71, 10, 0.348);
+}
+
+
+
+#missing {
+  padding-top: 3px;
+  color: rgba(255, 0, 0, 0.635);
+}
+.form-main-div {
   display: flex;
   flex-wrap: wrap;
 }
 
-input, label {
-  margin: 5ch;
+.form-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 180%;
 }
-#first-block, #third-block {
-    --backgroundcol: rgb(209, 209, 202);
 
+.form-divs {
+  margin: 2rem 16rem 0 0 ;
 }
 
-#second-block {
-    --backgroundcol: rgb(156, 156, 152);
-    box-shadow: 2px black;
+/*THIRD BLOCK ON THE RIGHT*/
+
+button {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  background-color: rgb(56, 97, 30);
+  padding: 1rem 3.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.097);
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px rgb(143, 143, 143);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+  opacity: 0.8;
 }
+
+button:hover {
+  cursor: grab;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.38);
+  opacity: 1;
+}
+
+#login {
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+#login:hover{
+  opacity: 1;
+}
+
